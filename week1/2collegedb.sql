@@ -37,10 +37,12 @@ ALTER TABLE students  ADD COLUMN city TEXT;
 
 
 UPDATE students SET city ="karachi" WHERE s_class >11;
-UPDATE students SET city ="lahore" WHERE city NOT "karachi";
+UPDATE students SET city ="lahore" WHERE  s_class <= 11;
 
-
+DELETE FROM students WHERE s_id=5;
 SELECT * FROM students ;
+
+UPDATE students SET s_name ="michle" WHERE s_age = 22 ;
 
 
 
